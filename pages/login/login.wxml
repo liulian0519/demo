@@ -1,0 +1,11 @@
+ <view class='container'>
+  <text>用户登陆</text>
+  <view class='input-box' >
+       <input name="username" type="number" placeholder="用户名" placeholder-class="input-placeholder" focus maxlength="8" value="{{username}}" bindinput="bindUsernameInput" />
+       
+  </view>
+  <view class='input-box'>
+    <input name="password" type="password" placeholder="密码" placeholder-class="input-placeholder" focus maxlength="8" value="{{password}}" bindinput="bindpasswordInput" />
+  </view>
+  <button class='btn' bindtap='login'>登陆</button>
+</view> 

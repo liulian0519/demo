@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/user/user"
+    
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "评测小程序首页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor": "#67d5ff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/home_inactive.png",
+      "selectedIconPath": "images/home.png"
+    
+    },{
+      "pagePath":"pages/login/login",
+      "text":"登陆",
+      "iconPath": "images/mine_inactive.png",
+      "selectedIconPath": "images/mine.png"
+    }]
+  }
+}

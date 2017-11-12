@@ -1,0 +1,1 @@
+<input name="username" type="number" placeholder="用户名" placeholder-class="input-placeholder" focus maxlength="8" value="{{username}}" bindinput="bindUsernameInput" />
