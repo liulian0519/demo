@@ -1,0 +1,60 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/test/test",
+    "pages/order/order",
+    "pages/OrderHistory/OrderHistory",
+    "pages/backfeed/backfeed",
+    "pages/MyAddress/MyAddress",
+    "pages/Addaddress/Addaddress",
+    "pages/Loginzhihuiclassroom/Loginzhihuiclassroom",
+    "pages/info/info",
+    "pages/orderinfo/orderinfo",
+    "pages/orderinfor/orderinfor",
+    "pages/release/release"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fc940e",
+    "navigationBarTitleText": "饭温 ",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "iconSize": [
+      30
+    ],
+    "color": "#989898",
+    "selectedColor": "#f9ae27",
+    "borderStyle": "1px solid #c3c3c3",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "抢单",
+        "iconPath": "images/main page-none.png",
+        "selectedIconPath": "images/main page-full.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "images/release-none.png",
+        "selectedIconPath": "images/release-full.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "images/order-none.png",
+        "selectedIconPath": "images/order-full.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/personal-none.png",
+        "selectedIconPath": "images/personal-full.png"
+      }
+    ]
+  }
+}

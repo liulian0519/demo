@@ -1,0 +1,58 @@
+<view class='wrapper'>
+  <view class='select'>
+    <text>选择食堂</text>
+    <view class='wrap'>
+      <radio-group bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group> 
+    </view> 
+  </view>
+  <view class='rest'>
+    <text>餐厅楼层及名称</text>
+    <view class='wrap1'>
+      <radio-group bindchange="radioChange">
+        <label class="radio1" wx:for="{{floor}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group> 
+       <!-- <input placeholder-class="input-placeholder" value="{{username}}" bindinput='bindusernameinput' bindblur='userblur'/> -->
+      <input placeholder='请输入您需求的餐厅名称' class='rest-name' placeholder-class='place'/>
+    </view>
+  </view>
+  <view class='order'>
+    <text>订单要求</text>
+    <view class='wrap2'>
+       <view>
+        <label>送达时间</label> 
+        <picker mode="time" value="{{time}}" start="{{starttime}}"bindchange="bindTimeChange">{{time}}</picker>
+        <image src='../../images/below.png'></image>
+        <text class='text'>至</text>
+        <picker mode="time" value="{{time1}}" start="{{starttime1}}" bindchange="bindTimeChange1">{{time1}}</picker>
+        <image src='../../images/below.png'></image>
+        <text class='text'>内</text>
+      </view>
+      <view class='fk'>
+        <label>金额限制</label>
+        <input placeholder='请输入购买食物的金额上限' placeholder-class='place' type='number'></input>
+      </view> 
+      
+      <view>
+        <textarea auto-height placeholder='请输入您对食物的要求' placeholder-class='place' maxlength='60'
+        style='border-bottom: 1px solid #989898; padding-top:22rpx;'>
+        </textarea>  
+      </view>
+    </view>
+  </view>
+  <view class='address'>
+    <navigator url='../MyAddress/MyAddress?address={{address}}&username={{username}}&phone={{phone}}"'>
+    <text>您的地址</text>
+    <image src='../../images/more.png'></image>
+    </navigator>
+  </view>
+ <button class="btn-help" formType="submit" style='margin-top:50rpx;'>发布</button>
+ <view style='padding-top:30rpx;'>
+  
+ </view>
+</view>

@@ -1,0 +1,30 @@
+
+/* pages/Loginzhihuiclassroom/Loginzhihuiclassroom.wxss */
+.user-box{
+  margin-top: 104rpx;
+  border-bottom: 1px solid #989898;
+  width:500rpx;
+}
+.pass-box{
+  margin-top: 60rpx;
+  border-bottom: 1px solid #989898;
+  width:500rpx;
+}
+.user-box-active{
+  margin-top: 104rpx;
+  border-bottom: 1px solid #f9ae27;
+  width:500rpx;
+}
+.pass-box-active{
+  margin-top: 60rpx;
+  border-bottom: 1px solid #f9ae27;
+  width:500rpx;
+}
+.input-placeholder{
+  font-size: 30rpx;
+  color: #989898
+}
+.error{
+  font-size: 22rpx;
+  color: #f75231;
+}

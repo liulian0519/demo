@@ -1,0 +1,45 @@
+<!--pages/OrderHistory/OrderHistory.wxml-->
+   <!-- @import "common.wxss"; -->
+ 
+<view class='wrap'>
+  <view class='order-tab'>
+    <view>
+      <text class='release {{release}}' bindtap='texweigh'>已发布</text>
+    </view> 
+    <view>
+      <text class='help {{help}}' bindtap='textweight'>已帮助</text>
+    </view>
+  </view>
+  <view class='{{MyRelease}}'>
+    <view wx:for="{{Release}}"  wx:for-index="idx" class='releaseinfo'>
+      <view class='ReleaseTime'>
+        <text>完成时间</text>
+        <label class='ty'>{{item.time}}</label> 
+      </view>
+      <view class='ReleasePartner'>
+        <text>送餐同学</text>
+        <label class='ty'>{{item.partner}}</label> 
+      </view> 
+      <view class='ReleaseNo'>
+        <text>订单编号</text>
+        <label class='ty'>{{item.no}}</label> 
+      </view>    
+    </view> 
+  </view>
+  <view class='{{MyHelp}}'>
+    <view wx:for="{{Help}}"  wx:for-index="idx" class='helpinfo'>
+      <view class='HelpTime'>
+        <text>完成时间</text>
+        <label>{{item.time}}</label> 
+      </view>
+      <view class='HelpAdd'>
+        <text>送达地点</text>
+        <label class='ty'>{{item.add}}</label> 
+      </view>   
+      <view class='HelpNo'>
+        <text>订单编号</text>
+        <label>{{item.no}}</label> 
+      </view>   
+    </view> 
+  </view>
+</view>

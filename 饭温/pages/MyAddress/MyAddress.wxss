@@ -1,0 +1,36 @@
+/* pages/MyAddress/MyAddress.wxss */
+page{
+  background: #f2f2f2;
+}
+.item{
+  background: #ffffff;
+  height: 195rpx;
+  padding-left: 30rpx;
+  padding-top: 51rpx;
+  margin-bottom: 30rpx
+}
+.address text{
+  font-size: 32rpx;
+  color:#333333;
+}
+.info{
+  margin-top: 40rpx;
+}
+.info text{
+  font-size: 32rpx;
+  color:#989898;
+}
+.phone{
+  margin-left: 100rpx
+}
+image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.img image{
+ position: relative;
+ top: -180rpx;
+ float:right;
+ right: 30rpx;
+ padding-left: 60rpx
+}

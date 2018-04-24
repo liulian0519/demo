@@ -1,0 +1,43 @@
+<view class='wrap'>
+  <view class='order-tab'>
+    <view>
+      <text class='release {{release}}' bindtap='texweigh'>我发布的</text>
+    </view> 
+    <view>
+      <text class='help {{help}}' bindtap='textweight'>正在帮助</text>
+    </view>
+  </view>
+  <view class='{{MyRelease}}'>
+    <view wx:for="{{Release}}"  wx:for-index="idx" class='releaseinfo'>
+      <view class='ReleaseTime'>
+        <text>发布时间</text>
+        <label class='ty'>{{item.time}}</label> 
+      </view>
+      <view class='ReleaseRest'>
+        <text>餐厅名称</text>
+        <label class='ty'>{{item.rest}}</label> 
+        <label class='{{result}}'>{{item.result}}</label> 
+      </view>   
+    </view> 
+  </view>
+  <view class='{{MyHelp}}'>
+    <view wx:for="{{Help}}"  wx:for-index="idx" class='helpinfo'>
+      <view class='HelpTime'>
+        <image src='../../images/time.png'></image>
+        <label style='color:#118ed0; font-size:28rpx;'>{{item.time}}</label> 
+      </view>
+      <view class='HelpRest'>
+        <text>餐厅名称</text>
+        <label class='ty'>{{item.rest}}</label> 
+      </view>   
+      <view class='HelpAdd'>
+        <text>送达地点</text>
+        <label>{{item.add}}</label> 
+      </view>   
+      <view class='HelpPhone'>
+        <text>联系电话</text>
+        <label>{{item.phone}}</label> 
+      </view>  
+    </view> 
+  </view>
+</view>

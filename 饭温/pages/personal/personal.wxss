@@ -1,0 +1,45 @@
+/* pages/personal/personal.wxss */
+page{
+  background: #f2f2f2;
+}
+.wrap{
+  background: #ffffff
+}
+navigator{
+  font-size: 26rpx;
+  color:#f9ae27;
+  margin-top: 27rpx;
+  margin-bottom: 24rpx;
+}
+.bind-account{
+  margin-bottom: 53rpx;
+}
+.user{
+  padding-right: 12rpx;
+  border-right: 1px solid #cdcdcd;
+  margin-right: 12rpx;
+}
+.user, .sno{
+  font-size: 26rpx;
+  color: #656565;
+  margin-top: 20rpx;
+}
+image{
+  width: 19rpx;
+  height: 32rpx;
+  padding-right: 30rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 116rpx;
+  background: #fff;
+}
+.item text {
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+

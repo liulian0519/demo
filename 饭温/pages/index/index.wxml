@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class='wrap'>
+  <view class='text'>
+    <view class='item {{fontOne}}'bindtap='changeone'>旭日苑</view>
+    <view class='item1 {{fontTwo}}' bindtap='changetwo'>美食广场</view>
+    <view class='item {{fontThird}}'bindtap='changethird'>东升苑</view>
+  </view>
+  <view class='wall'> 
+    <text>- 任务墙 -</text>
+  </view>
+  <view class='Wallinfo'  style='display:{{one}}' >
+    <view wx:for="{{Wall}}"  wx:for-index="idx" class='wallinfo'>
+      <view class='WallRest'>
+       <image src='../../images/restaurant-icon.png' style='width:41rpx; height:38rpx'></image>
+        <text>餐厅名称:</text>
+        <label class='time' style=' color:#118ed0; font-size:26rpx;'>{{item.time}}</label> 
+        <label style='display:block' class='rest'>{{item.rest}}</label> 
+      </view>   
+      <view class='Wallfloor'>
+       <image src='../../images/floor-icon.png' style='width: 38rpx; height:38rpx;'></image>
+        <text>餐厅楼层:</text>
+        <label style='display:block' class='rest'>{{item.floor}}</label> 
+      </view> 
+      <view class='WallAdd'>
+       <image src='../../images/target-icon.png' style='width:41rpx; height:40rpx'></image>
+        <text>送达地点:</text>
+        <label style='display:block' class='address'>{{item.add}}</label> 
+      </view>    
+    </view>
+  </view>
+  <view class='Wallinfo' style='display:{{two}}' >
+  <view wx:for="{{WallTwo}}"  wx:for-index="idx" class='wallinfo'>
+      <view class='WallRest'>
+       <image src='../../images/restaurant-icon.png' style='width:41rpx; height:38rpx'></image>
+        <text>餐厅名称:</text>
+        <label class='time' style=' color:#118ed0; font-size:26rpx;'>{{item.time}}</label> 
+        <label style='display:block' class='rest'>{{item.rest}}</label> 
+      </view>   
+      <view class='Wallfloor'>
+       <image src='../../images/floor-icon.png' style='width: 38rpx; height:38rpx;'></image>
+        <text>餐厅楼层:</text>
+        <label style='display:block' class='rest'>{{item.floor}}</label> 
+      </view> 
+      <view class='WallAdd'>
+       <image src='../../images/target-icon.png' style='width:41rpx; height:40rpx'></image>
+        <text>送达地点:</text>
+        <label style='display:block' class='address'>{{item.add}}</label> 
+      </view> 
+    </view>   
+  </view>
+  <view class='Wallinfo' style='display:{{third}}'>
+    <view wx:for="{{WallThird}}"  wx:for-index="idx" class='wallinfo'>
+      <view class='WallRest'>
+       <image src='../../images/restaurant-icon.png' style='width:41rpx; height:38rpx'></image>
+        <text>餐厅名称:</text>
+        <label class='time' style=' color:#118ed0; font-size:26rpx;'>{{item.time}}</label> 
+        <label style='display:block' class='rest'>{{item.rest}}</label> 
+      </view>   
+      <view class='Wallfloor'>
+       <image src='../../images/floor-icon.png' style='width: 38rpx; height:38rpx;'></image>
+        <text>餐厅楼层:</text>
+        <label style='display:block' class='rest'>{{item.floor}}</label> 
+      </view> 
+      <view class='WallAdd'>
+        <image src='../../images/target-icon.png' style='width:41rpx; height:40rpx'></image>
+        <text>送达地点:</text>
+        <label style='display:block' class='address'>{{item.add}}</label> 
+      </view>   
+    </view> 
+  </view>
+</view>

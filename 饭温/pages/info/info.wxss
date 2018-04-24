@@ -1,0 +1,47 @@
+/* pages/info/info.wxss *//* pages/dd/dd.wxss */
+page{
+  background: #f2f2f2;
+}
+.orderInfo{
+  background: #ffffff;
+  /* margin-top: 30rpx; */
+  padding-top: 53rpx;
+  padding-left: 30rpx;
+  height: 482rpx;
+}
+.order-info text{
+  font-size: 32rpx;
+  color: #989898;
+  padding-right: 100rpx;
+}
+.order-info label{
+  font-size: 32rpx;
+  color: #333333;
+}
+.item{
+   padding-bottom: 32rpx;
+}
+.order-re{
+  margin-top: -45rpx;
+  margin-left: 230rpx;
+}
+.nameinfo{
+  background: #ffffff;
+  height: 200rpx;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+.nameinfo text{
+  font-size: 32rpx;
+  color: #989898;
+}
+.nameinfo label{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 100rpx;
+}
+
+ .name{
+ padding-top: 40rpx;
+ padding-bottom:20rpx;
+} 

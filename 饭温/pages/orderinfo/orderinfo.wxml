@@ -1,0 +1,17 @@
+<!--pages/orderinfo/orderinfo.wxml-->
+<view class='contracted'>
+  <view class='info'>
+    <text>接单人信息</text>
+  </view>
+  <view wx:for="{{contract}}"  wx:for-index="idx" class='contract'>
+    <view class='name'>
+      <text>姓名</text>
+      <label>{{item.contractname}}</label>
+    </view>
+    <view class='iphone'>
+      <text>联系号码</text>
+      <label>{{item.contractphone}}</label>
+    </view>
+  </view>
+</view>
+<include src="../info/info.wxml"/>

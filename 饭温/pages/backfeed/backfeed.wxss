@@ -1,0 +1,15 @@
+/* pages/backfeed/backfeed.wxss */
+page{
+  background: #f2f2f2;
+}
+.textarea-box{
+  background: #ffffff;
+  width: 100%;
+  height: 400rpx;
+  padding-left: 50rpx;
+  padding-top: 52rpx;
+}
+
+.btn-login, .btn-can{
+  margin-top: 50rpx;
+}

@@ -1,0 +1,38 @@
+/* pages/orderinfo/orderinfo.wxss */
+@import "../info/info.wxss";
+page{
+  background: #f2f2f2;
+}
+.contracted{
+  background: #ffffff;
+  height: 287rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+.info text{
+  font-size: 30rpx;
+  color: #656565;
+}
+.info{
+  padding-top: 48rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #dedfe0;
+}
+.contract text{
+  font-size: 32rpx;
+  color:#989898;
+}
+.contract label{
+  font-size: 32rpx;
+  color:#333333;
+  padding-left: 100rpx;
+}
+.name label{
+  padding-left: 166rpx;
+ 
+}
+.name{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

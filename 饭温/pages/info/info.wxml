@@ -1,0 +1,54 @@
+<!--pages/dd/dd.wxml-->
+<view>
+ <view class='orderInfo'>
+    <view wx:for="{{orderinfo}}"  wx:for-index="idx" class='order-info'>
+      <view class='item'>
+        <text>餐厅名称</text>
+        <label>{{item.restname}}</label>
+      </view>
+      <view class='item'>
+        <text>送达地点</text>
+        <label>{{item.orderAdd}}</label>
+      </view>
+      <view class='item'>
+        <text>送达时间</text>
+        <label>{{item.ordertime}}</label>
+      </view>
+      <view class='item'>
+        <text>金额要求</text>
+        <label>{{item.orderpay}}</label>
+      </view>
+      <view class='item'>
+        <text>订单要求</text>
+      <view class='order-re'>
+        <label class='orderRe'>{{item.orderRe}}</label>
+      </view>  
+    </view>
+  </view>
+</view>
+<view class='nameinfo'>
+  <view wx:for="{{order}}"  wx:for-index="idx" class='user-info'>
+    <view class='name'>
+      <text>姓名</text>
+      <label style='padding-left:166rpx;'>{{item.ordername}}</label>
+    </view>
+    <view class='phone'>
+      <text>联系号码</text>
+      <label>{{item.orderphone}}</label>
+    </view>
+  </view>
+</view>
+<view class='nameinfo'>
+  <view wx:for="{{order}}"  wx:for-index="idx" class='user-info'>
+    <view class='name'>
+      <text>订单号</text>
+      <label style='padding-left:136rpx;'>{{item.orderno}}</label>
+    </view>
+    <view class='phone'>
+      <text>订单日期</text>
+      <label>{{item.orderdate}}</label>
+    </view>
+  </view>
+</view>
+</view>
+

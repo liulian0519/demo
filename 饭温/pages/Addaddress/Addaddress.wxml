@@ -1,0 +1,40 @@
+<!--pages/Addaddress/Addaddress.wxml-->
+<view class='wrap'>
+  <view class='touchinfo'>
+    <view class='info'>
+      <text>联系人</text>
+    </view>
+    <view class='narrow'>
+      <view class='item'>
+        <text>姓名</text>
+        <input placeholder-class='place' placeholder='请填写您的姓名' bindinput='nameinput'></input>
+      </view>
+      <view class='item'>
+        <text>手机</text>
+        <input placeholder-class='place'  placeholder='请填写能联系到您的手机号码' bindinput='phoneinput'></input>
+      </view>
+    </view>
+  </view>
+  <view class='addinfo'>
+     <view class='info'>
+      <text>地址</text>
+    </view>
+    <view class='narrow'>
+      <view class='up'>
+       <radio-group bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+       </radio-group>     
+
+      </view>
+      <view class='item'>
+        <text>楼号</text>
+        <input placeholder='例： 长智公寓一号楼' placeholder-class='place' bindinput='floorinput'></input>
+      </view>
+    </view>
+  </view>
+  <view>
+    <button class='btn-help' bindtap='add'>保存</button>
+  </view>
+</view>

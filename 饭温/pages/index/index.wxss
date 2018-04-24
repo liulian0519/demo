@@ -1,0 +1,77 @@
+/**index.wxss**/
+page{
+  background: #f2f2f2;
+}
+.text{
+   background: -webkit-linear-gradient(180deg,  #fc940e, #f9b013); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(180deg, #fc940e, #f9b013); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(180deg, #fc940e, #f9b013); /* Firefox 3.6 - 15 */
+  background: linear-gradient(180deg, #fc940e, #f9b013); /* 标准的语法 */
+ display: flex;
+ flex-direction: row;
+ height: 88rpx;
+}
+
+.item{
+  font-size: 36rpx;
+  color: #ffffff;
+  margin-left: 72rpx;
+  
+}
+.item1{
+  font-size: 36rpx;
+  color: #ffffff;
+  margin-left: 118rpx;
+  margin-right: 46rpx;
+}
+.font{
+  font-size: 38rpx;
+  font-weight: 700;
+}
+.wall{
+  height: 116rpx;
+  background: #ffffff;
+  border-bottom: 1px solid #dedfe0;
+  display: flex;
+  justify-content: center;
+}
+.wall text{
+  color: #333333;
+  font-size: 30rpx;
+  padding-top: 52rpx;
+}
+ .wallinfo{
+  background: #ffffff;
+  margin-bottom: 30rpx; 
+  height: 411rpx;
+}
+.Wallinfo text{
+  font-size: 24rpx;
+  color: #656565;
+  margin-left: 100rpx;
+}
+ .Wallinfo label{
+  font-size: 32rpx;
+  color: #333333;
+  margin-left:100rpx;
+}
+/* .wallfloor{
+
+} */
+.time{
+  position: absolute;
+  right: 30rpx
+}
+.rest, .address{
+  padding-top: 5rpx;
+}
+.address{
+ padding-bottom: 50rpx;
+}  
+  .Wallinfo image{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left:30rpx;
+  top:70rpx;
+}  

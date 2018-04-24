@@ -1,0 +1,7 @@
+<!--pages/backfeed/backfeed.wxml-->
+<view class="backfeed">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="textarea-box" bindinput="bindInput" placeholder="请输入您使用过程中遇到的问题，我们会尽快解决" placeholder-class='place'/>
+    <button class="{{btn}}" form-type="submit" >提交</button>
+  </form>
+</view>

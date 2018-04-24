@@ -1,0 +1,3 @@
+<!--pages/orderinfor/orderinfor.wxml-->
+<include src="../info/info.wxml"/>
+<button class='btn-help'>我要帮他</button>

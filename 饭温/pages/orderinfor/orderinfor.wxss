@@ -1,0 +1,2 @@
+/* pages/orderinfor/orderinfor.wxss */
+@import "../info/info.wxss";

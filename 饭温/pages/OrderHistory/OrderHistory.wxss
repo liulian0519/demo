@@ -1,0 +1,38 @@
+/* pages/OrderHistory/OrderHistory.wxss */
+
+ page{
+  background: #f2f2f2;
+}
+ .releaseinfo text{
+  font-size: 30rpx;
+  color: #989898;
+}
+.releaseinfo label{
+  font-size: 30rpx;
+  color: #333333;
+  float: right;
+  padding-right: 30rpx;
+  padding-top: 10rpx;
+}
+.helpinfo text{
+  font-size: 30rpx;
+  color: #989898;
+}
+.helpinfo label{
+  font-size: 30rpx;
+  color: #333333;
+  float: right;
+  padding-right: 30rpx;
+  padding-top: 10rpx;
+}
+.releaseinfo, .helpinfo{
+  background: #ffffff;
+  border-bottom: 1px solid #dedfe0;
+  padding-top: 50rpx;
+  padding-left: 30rpx;
+  padding-bottom: 50rpx;
+}
+.ReleasePartner, .HelpAdd{
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}

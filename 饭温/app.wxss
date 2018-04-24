@@ -1,0 +1,129 @@
+/**app.wxss**/
+
+ .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 170rpx 0;
+  box-sizing: border-box;
+}  
+.h3{
+  font-size: 36rpx;
+  color:#333333;
+}
+.hidden{
+  visibility:hidden;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 43rpx;
+}
+.userinfo-avatar{
+  width: 168rpx;
+  height: 168rpx;
+  border-radius: 50%;
+  border: 1px solid #e9e9e9;
+}
+.userinfo-nickname{
+  margin-top: 23rpx;
+  font-size: 26rpx;
+  color:#656565;
+}
+/*登陆未填写*/
+.btn-login{
+  margin-top: 99rpx;
+  width: 500rpx;
+  height: 100rpx;
+  border: 2rpx solid #e9e9e9;
+  border-radius: 10rpx;
+  color: white;
+  opacity:0.6;
+  background: #f9ae27;
+}
+/*登陆*/
+.btn-can{
+  margin-top: 99rpx;
+  width: 500rpx;
+  height: 100rpx;
+  border: 2rpx solid #e9e9e9;
+  border-radius: 10rpx;
+  color: white;
+  background: #f9ae27;
+}
+.add{
+  width: 100%;
+  height: 116rpx;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;  
+}
+.add image{
+  width: 52rpx;
+  height: 52rpx;
+   padding-top: 17rpx; 
+  margin-left: 46%
+}
+.add text{
+  font-size: 20rpx;
+  color: #989898;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rpx;
+}
+
+.btn-help{
+  margin-top: 50rpx;
+  width: 690rpx;
+  height: 106rpx;
+  color: #ffffff;
+  background: #f9ae27;
+  border-radius: 10rpx;
+}
+/*白色背景红字*/
+.btn-logout{
+  width: 690rpx;
+  height: 106rpx;
+  box-sizing: border-box;
+  /* border: 2px solid #e9e9e9; */
+  color: #f75231;
+  background: #ffffff;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+}
+.place{
+  font-size: 30rpx;
+  color: #989898;
+}
+.order-tab{
+  background: #ffffff;
+  height: 106rpx;
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-shadow:0rpx 0px 10rpx #d5d5d5;
+}
+.order-tab text{
+  font-size: 30rpx;
+  color: #333333;
+  
+}
+.MyRelease{
+  display: none;
+}
+.release{
+  margin-left: 143rpx;
+  margin-right: 227rpx;
+
+}
+.release1, .help1{
+  border-bottom: 2px solid #f9ae27;
+  padding-bottom: 26rpx;
+  font-weight: 700;
+}

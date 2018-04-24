@@ -1,0 +1,34 @@
+<!--pages/personal/personal.wxml-->
+<!-- userinfo中有用户的各类信息 userinfo是个全局变量 假数据：nickname：soul -- usename: 刘莲avatarUrl "liulian"-->
+  <view>
+    <view class='wrap'>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+        <text class="userinfo-nickname {{username ? 'hidden': ''}}">{{nickName}}</text> 
+        <view class="no-account" wx:if="{{!username}}">
+          <navigator url="../Loginzhihuiclassroom/Loginzhihuiclassroom">请先绑定学校账号以解锁全部功能 ></navigator>
+        </view>
+        <view class="bind-account" wx:else>
+          <text class='user'>{{username}}</text>
+          <text class='sno'>{{sno}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='information'>
+      <navigator url="../MyAddress/MyAddress?address={{address}}&username={{username}}&phone={{phone}}" class='item'>
+        <text class='item-info'>我的地址</text>
+        <image class='mayaddimg' src='../../images/more.png'></image>
+      </navigator>
+      <navigator url="../OrderHistory/OrderHistory" class='item'>
+        <text class='item-info'>订单历史</text>
+        <image class='mayaddimg' src='../../images/more.png'></image>
+      </navigator>
+      <navigator url="../backfeed/backfeed" class='item'>
+        <text class='item-info'>问题反馈</text>
+        <image class='mayaddimg' src='../../images/more.png'></image>
+      </navigator>
+      <button class="btn-logout" bindtap="logout">退出账号</button> 
+    </view>
+
+  </view>
